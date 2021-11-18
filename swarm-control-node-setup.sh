@@ -14,3 +14,6 @@ cp exports /etc/exports
 
 systemctl restart nfs-server
 systemctl enable nfs-server
+
+echo "" > /nfs/db/_empty_file
+echo "" > /nfs/wordpress/_empty_file
