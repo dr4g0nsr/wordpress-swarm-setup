@@ -64,6 +64,13 @@
 					"description":"Where should NFS share connect to."
 				}
 			]
-		}
+		},
+		{
+			"type":4,
+			"title":"Wordpress",
+			"description":"Wordpress setup with a MySQL database",
+			"note":"Deploys a Wordpress instance connected to a MySQL database.",
+			"stackfile":"https://raw.githubusercontent.com/dr4g0nsr/wordpress-swarm-setup/master/stack.yml"
+		}		
        ]
 }
