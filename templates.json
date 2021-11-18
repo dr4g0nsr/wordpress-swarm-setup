@@ -12,7 +12,7 @@
 			"platform":"linux",
 			"logo":"https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
 			"repository":{
-				"url":"https://github.com/portainer/templates",
+				"url":"https://github.com/dr4g0nsr/wordpress-swarm-setup",
 				"stackfile":"stack.yml"
 			},
 			"env":[
@@ -44,7 +44,7 @@
 			"platform":"linux",
 			"logo":"https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
 			"repository":{
-				"url":"https://github.com/portainer/templates",
+				"url":"https://github.com/dr4g0nsr/wordpress-swarm-setup",
 				"stackfile":"docker-compose.yml"
 			},
 			"env":[
