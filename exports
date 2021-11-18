@@ -1,3 +1,3 @@
 # NFS exports
 
-/nfs *(rw,fsid=0)
+/nfs   *(rw,insecure,sync,no_subtree_check,no_root_squash)
