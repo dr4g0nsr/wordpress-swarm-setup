@@ -34,12 +34,12 @@ volumes:
     driver: local
     driver_opts:
       type: nfs
-      o: addr=${NFS_IP},rw
+      o: addr=${NFS_IP},rw,nolock
       device: ":/nfs/db"
 
   wp_content:
     driver: local
     driver_opts:
       type: nfs
-      o: addr=${NFS_IP},rw
+      o: addr=${NFS_IP},rw,nolock
       device: ":/nfs/wordpress"
