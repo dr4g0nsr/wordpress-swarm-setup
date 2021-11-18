@@ -4,7 +4,6 @@ services:
 
    db:
     hostname: db
-    container_name: db
     image: mariadb
     volumes:
       - db_data:/var/lib/mysql
@@ -16,7 +15,6 @@ services:
 
    wordpress:
     hostname: wordpress
-    container_name: wordpress
     image: wordpress
     depends_on:
        - db
