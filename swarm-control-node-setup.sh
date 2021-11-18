@@ -12,5 +12,5 @@ chown nobody:nogroup /nfs/* -R
 
 cp exports /etc/exports
 
-systemctl nfs-server restart
+systemctl restart nfs-server
 systemctl enable nfs-server
