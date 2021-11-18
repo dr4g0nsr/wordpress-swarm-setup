@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt install -y nfs-server nfs-common docker.io
+apt install -y nfs-kernel-server nfs-common docker.io
 
 docker swarm init
 apt update
