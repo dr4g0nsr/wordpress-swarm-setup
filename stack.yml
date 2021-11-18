@@ -9,10 +9,10 @@ services:
     volumes:
       - db_data:/var/lib/mysql
     environment:
-       MYSQL_ROOT_PASSWORD: {$MYSQL_ROOT_PASSWORD}
+       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
        MYSQL_DATABASE: wordpress
        MYSQL_USER: wordpress
-       MYSQL_PASSWORD: {$MYSQL_WORDPRESS_PASSWORD}
+       MYSQL_PASSWORD: ${MYSQL_WORDPRESS_PASSWORD}
 
    wordpress:
     hostname: wordpress
@@ -27,7 +27,7 @@ services:
     environment:
        WORDPRESS_DB_HOST: db:3306
        WORDPRESS_DB_USER: wordpress
-       WORDPRESS_DB_PASSWORD: {$MYSQL_WORDPRESS_PASSWORD}
+       WORDPRESS_DB_PASSWORD: ${MYSQL_WORDPRESS_PASSWORD}
        WORDPRESS_DB_NAME: wordpress
 
 volumes:
@@ -36,12 +36,12 @@ volumes:
     driver: local
     driver_opts:
       type: nfs
-      o: addr={$NFS_IP},rw
+      o: addr=${NFS_IP},rw
       device: ":/nfs/db"
 
   wp_content:
     driver: local
     driver_opts:
       type: nfs
-      o: addr={$NFS_IP},rw
+      o: addr=${NFS_IP},rw
       device: ":/nfs/wordpress"
