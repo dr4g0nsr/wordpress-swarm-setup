@@ -17,9 +17,19 @@
 			},
 			"env":[
 				{
-					"name":"MYSQL_DATABASE_PASSWORD",
+					"name":"MYSQL_ROOT_PASSWORD",
 					"label":"Database root password",
 					"description":"Password used by the MySQL root user."
+				},
+				{
+					"name":"MYSQL_WORDPRESS_PASSWORD",
+					"label":"Wordpress database password",
+					"description":"Password used by Wordpress."
+				},
+				{
+					"name":"NFS_IP",
+					"label":"IP of NFS Server",
+					"description":"Where should NFS share connect to."
 				}
 			]
 		},
@@ -39,9 +49,19 @@
 			},
 			"env":[
 				{
-					"name":"MYSQL_DATABASE_PASSWORD",
+					"name":"MYSQL_ROOT_PASSWORD",
 					"label":"Database root password",
 					"description":"Password used by the MySQL root user."
+				},
+				{
+					"name":"MYSQL_WORDPRESS_PASSWORD",
+					"label":"Wordpress database password",
+					"description":"Password used by Wordpress."
+				},
+				{
+					"name":"NFS_IP",
+					"label":"IP of NFS Server",
+					"description":"Where should NFS share connect to."
 				}
 			]
 		}
